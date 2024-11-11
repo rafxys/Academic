@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Turístico - Alagoas</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Importa ícones do Font Awesome para serem usados em botões e seções -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Importa a fonte "poppins" para a página -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Menu Lateral-->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <img src="" alt="Logo Alagoas" class="logo">
+            <button class="close-sidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <!-- Mecanismo de busca/pesquisa para filtrar os resultados de pesquisa por cidade -->
+        <div class="search-box">
+            <div class="search-input-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Buscar cidade...">
+            </div>
+            <div class="search-suggestions"></div>
+        </div>
+
+        <!-- Filtro de resultados de busca por categorias de lugares -->
+        <div class="filter-section">
+            <h3>Filtrar por Categoria</h3>
+            <ul class="menu-items">
+                <li><a href="#todos" class="menu-item active" data-category="todos">
+                    <i class="fas fa-globe"></i>
+                    <span>Todos</span>
+                </a></li>
+                <li><a href="#praias" class="menu-item" data-category="praias">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <span>Praias</span>
+                </a></li>
+                <li><a href="#parques" class="menu-item" data-category="parques">
+                    <i class="fas fa-tree"></i>
+                    <span>Parques</span>
+                </a></li>
+                <li><a href="#historia" class="menu-item" data-category="historia">
+                    <i class="fas fa-landmark"></i>
+                    <span>História</span>
+                </a></li>
+                <li><a href="#rural" class="menu-item" data-category="rural">
+                    <i class="fas fa-mountain"></i>
+                    <span>Rural</span>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Botão pra abrir o menu lateral -->
+    <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Hero Section (imagem em destaque, no fundo, no começo da página)-->
+    <header class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Descubra Alagoas</h1>
+            <p>Explore as maravilhas do paraíso brasileiro</p>
+        </div>
+        
+        <!-- container para os cards em movimento -->
+        <div class="floating-cards-container">
+            <button class="nav-arrow prev">
+                <!-- seta esquerda -->
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="floating-cards">
+            </div>
+            <!-- seta direita -->
+            <button class="nav-arrow next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Seções de conteúdo de acordo com as categorias definidas (praias, parques, etc) -->
+    <main>
+        <section id="praias" class="content-section">
+            <h2>Praias</h2>
+            <div class="cards-grid">
+                <!-- Card no JavaScript -->
+            </div>
+        </section>
+
+        <section id="parques" class="content-section">
+            <h2>Parques</h2>
+            <div class="cards-grid">
+                <!-- Card no JavaScript -->
+            </div>
+        </section>
+
+        <section id="historia" class="content-section">
+            <h2>História</h2>
+            <div class="cards-grid">
+                <!-- Card no JavaScript -->
+            </div>
+        </section>
+
+        <section id="rural" class="content-section">
+            <h2>Turismo Rural</h2>
+            <div class="cards-grid">
+                <!-- Card no JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal para exibir detalhes adicionais de um ponto turístico (ao clicar no card )-->
+    <div class="modal" id="detailsModal">
+        <div class="modal-content">
+            <button class="close-modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <!-- Card no JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- seção inferior da página(rodapé), com algumas informações de contato ou outros links que possam ser interessantes na página, mas de forma secundária -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre Alagoas</h3>
+                <p>Descubra as belezas naturais, a rica história e a cultura única de Alagoas, terra de praias paradisíacas e tradições encantadoras.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#praias">Praias</a></li>
+                    <li><a href="#parques">Parques</a></li>
+                    <li><a href="#historia">História</a></li>
+                    <li><a href="#rural">Turismo Rural</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p><i class="fas fa-envelope"></i> contato@guiaalagoas.com</p>
+                <p><i class="fas fa-phone"></i> (82) 4002-8922</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Guia Turístico Alagoas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- chamando/linkando arquivos javascript -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
