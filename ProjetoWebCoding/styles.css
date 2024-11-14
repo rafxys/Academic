@@ -606,3 +606,9 @@ body {
     padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+/* alterando o tamanho das imagens do card*/
+img {
+    width: 480px;
+    height: 500px;
+    object-fit: cover; /* Ajusta o corte da imagem para cobrir o tamanho sem distorcer */
+}
