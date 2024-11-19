@@ -50,7 +50,7 @@ body {
     z-index: 2;
     text-align: center;
     color: white;
-    padding-top: 20vh;
+    padding-top: 5vh;
 }
 
 .hero-content h1 {
@@ -313,7 +313,7 @@ body {
 
 /* mesmo sem ter ainda uma imagem de logo, defini uma formatação pra imagem que ainda vamos procurar/fazer. Então tá com tamanho e animação ajustado, só falta criar a imagem kkkkkk */
 .logo {
-    height: 45px;
+    height: 65px;
     transition: var(--transition);
 }
 
